@@ -32,8 +32,8 @@
     border-radius: 10px;
 }
 
-.button {
-    
+.container {
+   border:  2px solid white
 }
 
 #generate {
@@ -49,6 +49,7 @@
 
 .length-Of-Pass {
    font-weight: bold;
+   margin-top: 10px;
 }
 
 
