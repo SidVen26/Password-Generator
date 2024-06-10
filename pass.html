@@ -4,6 +4,10 @@
     </head>
     <body class = "body">
         <h1 class="h1">Password Generator</h1>
+        <div class="length-Of-Pass">
+        <label for="password-length">Password Length:</label>
+        <input type="number" id="password-length" min="1" max="16" value="16">
+        </div>
         <div class="button">   
             <button id ="generate" onclick="create()">Generate Passwords</button>   
         </div>
@@ -12,7 +16,7 @@
             <p id="passTwo-el">Click generate</p>
         </div>
         <div class="Instructions">
-            <h4 id="h4">Click the button to generate two (6 character) random passwords </h4>
+            <h4 id="h4">Click the button to generate two random passwords of length between 1 - 16 characters </h4>
         </div>
         <script src="pass.js"></script>
     </body>

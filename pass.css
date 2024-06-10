@@ -41,7 +41,14 @@
     padding-top: 5px;
     padding-bottom: 5px;
     margin-bottom: 10px;
+    margin-top: 20px;
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-weight: bold;
     color: black
 }
+
+.length-Of-Pass {
+   font-weight: bold;
+}
+
+

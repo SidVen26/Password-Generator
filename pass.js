@@ -6,21 +6,22 @@ const characters = ["A","B","C","D","E","F","G","H","I","J","K","L","M","N","O"
 let len = characters.length
 let passOne = document.getElementById("passOne-el")
 let passTwo = document.getElementById("passTwo-el")
+let passLenInput = document.getElementById("password-length")
 
-
-function genPassword () {
+function genPassword (passLen = 7) {
     let pass = ""
-    for (let i = 1; i < 7; i++) {
+    for (let i = 1; i <= passLen; i++) {
          pass += characters[Math.floor(Math.random()*len)]
     }
 
     return pass
 }
 
-function create () {
-    console.log("button clicked")
-  passOne.textContent = genPassword()
-  passTwo.textContent = genPassword()
+ window.create = function () {
+  console.log("button clicked")
+  let passLen = parseInt(passLenInput.value) || 7
+  passOne.textContent = genPassword(passLen)
+  passTwo.textContent = genPassword(passLen)
 }
 
 
